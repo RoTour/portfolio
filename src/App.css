@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--sidebar-width: 200px;
+}
+
+#content {
+	width: 100%;
+	/*padding-left: calc(var(--sidebar-width) + 1rem);*/
+	padding-left: var(--sidebar-width);
+}
+
+p {
+	margin: 0;
+}

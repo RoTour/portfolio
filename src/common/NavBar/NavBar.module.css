@@ -1,0 +1,8 @@
+.navbar {
+	position: fixed;
+	width: var(--sidebar-width);
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: aquamarine;
+}
