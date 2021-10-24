@@ -1,8 +1,64 @@
-.navbar {
-	position: fixed;
-	width: var(--sidebar-width);
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background: aquamarine;
+/* Base break point. Must contain every classes */
+@media only screen and (max-width: 9999999px) {
+	span {
+		background: var(--background-color-light);
+		color: var(--primary-color);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		border-radius: 0 2px 2px 0;
+		padding: 1rem 0;
+	}
+
+	.w100 {
+		width: 100%;
+	}
+
+	.h100 {
+		height: 100%;
+	}
+
+	.icon {
+		width: 80%;
+		height: auto;
+		padding: 10px 10px;
+		margin: 5px 0;
+		transition: 300ms ease-out;
+		color: var(--primary-color);
+	}
+
+	.icon:hover {
+		color: white;
+		background-color: var(--primary-color);
+		border-radius: 20%;
+		cursor: pointer;
+	}
+
+	.active > * {
+		color: white;
+		background-color: var(--primary-color);
+		border-radius: 50%;
+	}
+}
+
+/* Tablets breakpoint */
+@media only screen and (max-width: 900px) {
+
+}
+
+/* Phones breakpoint */
+@media only screen and (max-width: 600px) {
+	.icon {
+		width: auto;
+		height: 90%;
+		padding: 5px;
+	}
+
+	span {
+		flex-direction: row;
+		height: 100%;
+	}
 }

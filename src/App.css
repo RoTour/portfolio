@@ -1,17 +1,68 @@
-* {
-	box-sizing: border-box;
+/* Base break point. Must contain every classes */
+@media only screen and (max-width: 9999999px) {
+	:root {
+		--sidebar-width: 5%;
+		--background-color: #282C34;
+		--background-color-light: #383C44;
+		--primary-color: #44D62C;
+		--text-color: white;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: var(--background-color);
+	}
+
+	#content {
+		width: 100%;
+		/*padding-left: calc(var(--sidebar-width) + 1rem);*/
+		padding-left: var(--sidebar-width);
+	}
+
+	p {
+		margin: 0;
+		color: var(--text-color);
+		letter-spacing: 2px;
+		word-spacing: 10px;
+	}
+
+	.navbar {
+		position: fixed;
+		width: var(--sidebar-width);
+		height: 100vh;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 }
 
-:root {
-	--sidebar-width: 200px;
+/* Tablets breakpoint */
+@media only screen and (max-width: 900px) {
+	:root {
+		--sidebar-width: 7.5%;
+	}
 }
 
-#content {
-	width: 100%;
-	/*padding-left: calc(var(--sidebar-width) + 1rem);*/
-	padding-left: var(--sidebar-width);
-}
-
-p {
-	margin: 0;
+/* Phones breakpoint */
+@media only screen and (max-width: 600px) {
+	.navbar {
+		height: var(--sidebar-width);
+		width: 100%;
+		top: unset;
+		bottom: 0;
+	}
+	.siteContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	#content {
+		padding-left: 1rem;
+		padding-bottom: var(--sidebar-width);
+	}
 }
