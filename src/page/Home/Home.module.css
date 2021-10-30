@@ -1,0 +1,69 @@
+body {
+	overflow: hidden;
+}
+
+.title {
+	color: var(--primary-color);
+	justify-self: center;
+	font-size: xxx-large;
+	text-align: center;
+	width: 75%;
+}
+
+.subTitle {
+	color: var(--secondary-color);
+	justify-self: center;
+	text-align: center;
+	width: 75%;
+}
+
+.divider {
+	background-color: var(--primary-color);
+	height: 50%;
+}
+
+.titleContainer {
+	display: grid;
+	grid-template-columns: 1fr 5px 1fr;
+	height: 75vh;
+	align-items: center;
+}
+
+.arrowContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 300ms ease-out;
+	height: 30vh;
+}
+
+.arrowContainer:hover {
+	transform: translateY(-2vh);
+	cursor: pointer;
+	background-color: var(--background-color-light);
+	/*height: 27vh;*/
+}
+
+.arrow {
+	color: var(--primary-color);
+	animation-name: bobing;
+	animation-direction: alternate;
+	animation-duration: 750ms;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+.arrowContainer:hover > .arrow {
+	animation-play-state: paused;
+}
+
+@keyframes bobing {
+	0% {
+		color: var(--primary-color);
+		transform: translateY(0);
+	}
+	100% {
+		color: var(--secondary-color);
+		transform: translateY(-20px);
+	}
+}

@@ -1,4 +1,31 @@
 a {
 	width: 100%;
 	text-align: center;
+	position: relative;
+}
+
+/*a:hover::after {*/
+/*	color: white;*/
+/*	position: absolute;*/
+/*	content: 'test';*/
+/*	right: -5vw;*/
+/*	top: 0;*/
+/*}*/
+
+a > .infobox {
+	display: none;
+	color: white;
+	position: absolute;
+	content: 'test';
+	/*right: -6vw;*/
+	top: 10px;
+	font-size: large;
+	background-color: black;
+	padding: 10px;
+	border-radius: 10px;
+	width: max-content;
+}
+
+a:hover > .infobox {
+	display: unset;
 }
