@@ -1,0 +1,40 @@
+.twoColSeparatedContainer {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3px 1fr;
+	align-items: center;
+}
+
+.leftCol {
+	height: 80%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.leftCol p {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.leftCol strong {
+	color: var(--primary-color);
+}
+
+.title {
+	color: white;
+	font-size: xxx-large;
+}
+
+.divider {
+	background-color: white;
+	height: 80%;
+}
+
+.rightCol {
+	width: 80%;
+	margin: auto;
+}
+

@@ -3,14 +3,15 @@ import { BsCodeSlash, BsStar, GoMail, ImHome, ImUser } from 'react-icons/all';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar, { NavBarItem } from './common/NavBar/NavBar';
-import Home from './page/Home/Home'
+import Home from './pages/Home/Home'
+import Robin from './pages/Robin/Robin';
 
 function App() {
   const navBarStyle = 'navbar';
 
   const navBarItems: NavBarItem[] = [
     { icon: ImHome, route: '/'},
-    { icon: ImUser, route: '/Robin'},
+    { icon: ImUser, route: '/robin'},
     { icon: BsCodeSlash, route: '/projects'},
     { icon: BsStar, route: '/experience'},
     { icon: GoMail, route: '/contact'},
@@ -22,9 +23,7 @@ function App() {
       <div id={'content'}>
         <Switch>
           <Route path={'/'} render={() => <Home/>} exact/>
-          <Route path={"/Robin"} exact>
-            <h1>Hello i'm Robin</h1>
-          </Route>
+          <Route path={"/Robin"} render={() => <Robin/>} exact />
         </Switch>
       </div>
     </div>

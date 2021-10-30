@@ -9,7 +9,7 @@ const Home: FC<HomeProps> = () => {
   const navigator = useHistory();
 
   const next = () => {
-    navigator.push('/Robin')
+    navigator.push('/robin')
   }
 
   return <div className={css.home}>

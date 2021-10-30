@@ -17,8 +17,9 @@ const NavBar: FC<NavBarProps> = (props) => {
   return <>
     <div className={props.css}>
       <span>
-        {props.items?.map(({icon, route}) => {
+        {props.items?.map(({icon, route}, index) => {
           return <IconLink
+            key={index}
             icon={icon}
             route={route}
             css={css.icon}
