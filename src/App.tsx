@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar, { NavBarItem } from './common/NavBar/NavBar';
 import Home from './pages/Home/Home'
+import Projects from './pages/Projects/Projects';
 import Robin from './pages/Robin/Robin';
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       <div id={'content'}>
         <Switch>
           <Route path={'/'} render={() => <Home/>} exact/>
-          <Route path={"/Robin"} render={() => <Robin/>} exact />
+          <Route path={"/robin"} render={() => <Robin/>} exact />
+          <Route path={"/projects"} render={() => <Projects/>} exact />
         </Switch>
       </div>
     </div>

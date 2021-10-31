@@ -1,0 +1,39 @@
+:root {
+	--card-border-radius: 20px;
+}
+
+.projectContainer {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	transition: 300ms ease-out;
+	height: 50vh;
+	border-radius: var(--card-border-radius);
+}
+
+.projectContainer:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	box-shadow: 0 6px 20px 0 var(--primary-color), 0 6px 20px 0 var(--primary-color);
+}
+
+.img {
+	object-fit: cover;
+	position: center;
+	width: 100%;
+	aspect-ratio: 16/9;
+	border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.projectTileText {
+	text-align: justify;
+	text-justify: inter-word;
+	overflow-y: hidden;
+	background-color: var(--background-color-light);
+	color: var(--primary-color);
+	padding: 1rem;
+	border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+}
