@@ -11,11 +11,11 @@ function App() {
   const navBarStyle = 'navbar';
 
   const navBarItems: NavBarItem[] = [
-    { icon: ImHome, route: '/'},
-    { icon: ImUser, route: '/robin'},
-    { icon: BsCodeSlash, route: '/projects'},
-    { icon: BsStar, route: '/experience'},
-    { icon: GoMail, route: '/contact'},
+    { icon: ImHome, route: '/', infoText: '🏠️ Home'},
+    { icon: ImUser, route: '/robin', infoText: '🎓 About Me'},
+    { icon: BsCodeSlash, route: '/projects', infoText: '💼 Projects'},
+    { icon: BsStar, route: '/experience', infoText: '⭐️Bonus Section'},
+    { icon: GoMail, route: '/contact', infoText: '📨️ Contact Me'},
   ]
 
   return <Router>
