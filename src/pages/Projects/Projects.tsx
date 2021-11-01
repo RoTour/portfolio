@@ -14,12 +14,15 @@ const Projects: FC<ProjectsProps> = () => {
     <div className={css.small}>
       <Title>My recent projects</Title>
       <div className={css.projectListContainer}>
-        <ProjectTile name={"YPM"} desc={"Project Management Application for 800+ college students"}
-                     link={"https://yprojectmanager.fr"} image={logoYnov}/>
-        <ProjectTile name={"Web Crawlers"} desc={"Various web crawlers projects to automate tasks and scrap data and implementing data visualisation"}
-                     link={"https://yprojectmanager.fr"} image={logoPuppeteer}/>
-        <ProjectTile name={"Teaching Development"} desc={"Currently in a work-study program, I teach programming to freshmen, mainly using Javascript and Goland"}
-                     link={"https://yprojectmanager.fr"} image={logoTeaching}/>
+        <ProjectTile name={"YPM"} link={"https://yprojectmanager.fr"} image={logoYnov}>
+          Project management Web Application (<strong>Backend</strong> + <strong>Frontend</strong>) used by <strong>800+ college students</strong>
+        </ProjectTile>
+        <ProjectTile name={"Web Crawlers"} link={"https://yprojectmanager.fr"} image={logoPuppeteer}>
+          Various <strong>web crawlers</strong> projects to automate tasks and scrap data
+        </ProjectTile>
+        <ProjectTile name={"Teaching Development"} link={"https://yprojectmanager.fr"} image={logoTeaching}>
+          Currently in a work-study program, <strong>I teach programming</strong> to freshmen, mainly using Javascript and Goland
+        </ProjectTile>
       </div>
     </div>
   </div>

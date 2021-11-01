@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsCodeSlash, BsStar, GoMail, ImHome, ImUser } from 'react-icons/all';
+import { BsCodeSlash, GoMail, ImHome, ImUser } from 'react-icons/all';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar, { NavBarItem } from './common/NavBar/NavBar';
@@ -14,7 +14,7 @@ function App() {
     { icon: ImHome, route: '/', infoText: '🏠️ Home'},
     { icon: ImUser, route: '/robin', infoText: '🎓 About Me'},
     { icon: BsCodeSlash, route: '/projects', infoText: '💼 Projects'},
-    { icon: BsStar, route: '/experience', infoText: '⭐️Bonus Section'},
+    // { icon: BsStar, route: '/experience', infoText: '⭐️Bonus Section'},
     { icon: GoMail, route: '/contact', infoText: '📨️ Contact Me'},
   ]
 

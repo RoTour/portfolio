@@ -11,7 +11,7 @@ type ProjectTileProps = {
 const ProjectTile: FC<ProjectTileProps> = (props) => {
   return <div className={css.projectContainer}>
     <img className={css.img} src={props.image} alt={'Project'}/>
-    <p className={css.projectTileText}>{props.desc}</p>
+    <p className={css.projectTileText}>{props.children}</p>
   </div>;
 };
 

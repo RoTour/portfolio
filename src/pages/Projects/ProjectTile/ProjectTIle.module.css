@@ -8,12 +8,13 @@
 	transition: 300ms ease-out;
 	height: 50vh;
 	border-radius: var(--card-border-radius);
+	box-shadow: 0 6px 10px 0 black, 0 6px 10px 0 black;
 }
 
 .projectContainer:hover {
 	transform: scale(1.1);
 	cursor: pointer;
-	box-shadow: 0 6px 20px 0 var(--primary-color), 0 6px 20px 0 var(--primary-color);
+	box-shadow: 0 6px 10px 0 black, 0 6px 20px 0 var(--primary-color), 0 6px 20px 0 var(--primary-color);
 }
 
 .img {
@@ -33,7 +34,11 @@ h2 {
 	text-justify: inter-word;
 	overflow-y: hidden;
 	background-color: var(--background-color-light);
-	color: var(--primary-color);
+	/*color: var(--primary-color);*/
 	padding: 1rem;
 	border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+}
+
+.projectTileText > strong {
+	color: var(--primary-color);
 }
