@@ -1,5 +1,13 @@
-.twoColSeparatedContainer {
+.centerContainer {
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+.twoColSeparatedContainer {
+	height: 80%;
 	display: grid;
 	grid-template-columns: 1fr 3px 1fr;
 	align-items: center;
@@ -9,9 +17,8 @@
 	height: 80%;
 	width: 80%;
 	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	display: grid;
+	grid-template-rows: max-content 1fr;
 }
 
 .leftCol p {
@@ -23,17 +30,13 @@
 	color: var(--primary-color);
 }
 
-.title {
-	color: white;
-	font-size: xxx-large;
-}
-
 .divider {
 	background-color: white;
 	height: 80%;
 }
 
 .rightCol {
+	height: 80%;
 	width: 80%;
 	margin: auto;
 }

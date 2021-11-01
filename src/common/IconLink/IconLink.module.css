@@ -4,28 +4,20 @@ a {
 	position: relative;
 }
 
-/*a:hover::after {*/
-/*	color: white;*/
-/*	position: absolute;*/
-/*	content: 'test';*/
-/*	right: -5vw;*/
-/*	top: 0;*/
-/*}*/
-
 a > .infobox {
-	display: none;
+	transform: scale(0);
 	color: white;
 	position: absolute;
-	content: 'test';
-	/*right: -6vw;*/
 	top: 10px;
+	left: 100%;
 	font-size: large;
 	background-color: black;
 	padding: 10px;
 	border-radius: 10px;
 	width: max-content;
+	transition: 300ms ease-out;
 }
 
 a:hover > .infobox {
-	display: unset;
+	transform: scale(1);
 }
