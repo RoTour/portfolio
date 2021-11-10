@@ -1,0 +1,75 @@
+.formContainer {
+	margin: auto;
+	width: 90%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.small {
+	height: 80%;
+}
+
+.formContainer > .small > form, .formLabel {
+	display: flex;
+	flex-direction: column;
+}
+
+.formLabel {
+	width: 100%;
+	color: var(--primary-color);
+	margin: 1.5rem 0;
+	font-size: x-large;
+}
+
+.formInput {
+	/*background-color: var(--background-color-light);*/
+	margin-top: .5rem;
+	background-color: var(--background-color-dark);
+	border: 2px solid var(--background-color-darker);
+	padding: 1rem;
+	border-radius: 15px;
+	color: white;
+	font-size: large;
+	font-weight: bold;
+	transition: 300ms ease-out;
+}
+
+.formInput:hover {
+	border-color: black;
+}
+
+.formInput:focus {
+	outline: #44D62C;
+	border-color: #44D62C;
+}
+
+.submitBtn {
+	width: max-content;
+	background: #44D62CAA;
+	color: white;
+	border: 0;
+	padding: 1rem;
+	border-radius: 15px;
+	font-size: larger;
+	transition: 300ms ease-out;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.submitBtn > * {
+	margin-left: 1rem;
+}
+
+.submitBtn:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
+
+.formRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1rem;
+}
