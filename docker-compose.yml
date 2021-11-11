@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    portfolio:
+        ports:
+            - "8091:3000"
+        build:
+            context: ./
+        volumes:
+            -   ./:/app/
+        container_name: portfolio
+
+

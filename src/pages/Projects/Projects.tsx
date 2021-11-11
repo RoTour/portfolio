@@ -21,7 +21,7 @@ const Projects: FC<ProjectsProps> = () => {
           Various <strong>web crawlers</strong> projects to automate tasks and scrap data
         </ProjectTile>
         <ProjectTile name={"Teaching Development"} link={"https://yprojectmanager.fr"} image={logoTeaching}>
-          Currently in a work-study program, <strong>I teach programming</strong> to freshmen, mainly using Javascript and Goland
+          Currently in a work-study program, <strong>I teach programming</strong> to freshmen, mainly using Javascript and Golang
         </ProjectTile>
       </div>
     </div>

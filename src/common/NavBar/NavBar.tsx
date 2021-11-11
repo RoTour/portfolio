@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IconType } from 'react-icons';
-import IconLink from '../IconLink/IconLink';
+import IconLink from './IconLink/IconLink';
 import css from './NavBar.module.css';
 
 type NavBarProps = {

@@ -5,6 +5,7 @@ a {
 }
 
 a > .infobox {
+	z-index: 10;
 	transform: scale(0);
 	color: white;
 	position: absolute;

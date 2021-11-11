@@ -48,7 +48,7 @@
 .submitBtn {
 	width: max-content;
 	background: #44D62CAA;
-	color: white;
+	color: var(--active-button);
 	border: 0;
 	padding: 1rem;
 	border-radius: 15px;
