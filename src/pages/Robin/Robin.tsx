@@ -4,10 +4,12 @@ import css from './Robin.module.css';
 import Skills from './Skills/Skills';
 
 
-type RobinProps = {}
+type RobinProps = {
+  id: string
+}
 
-const Robin: FC<RobinProps> = () => {
-  return <div className={css.centerContainer}>
+const Robin: FC<RobinProps> = (props) => {
+  return <div className={css.centerContainer} id={props.id}>
     <div className={css.twoColSeparatedContainer}>
       <div className={css.leftCol}>
         <h2 className={css.title}>Who am I ?</h2>

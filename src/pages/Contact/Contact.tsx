@@ -5,7 +5,9 @@ import Title from '../../common/Title/Title';
 import css from './Contact.module.css';
 import * as nodemailer from 'nodemailer'
 
-type ContactProps = {}
+type ContactProps = {
+  id: string
+}
 
 type Inputs = {
   email: string,
@@ -13,7 +15,7 @@ type Inputs = {
   message: string,
 }
 
-const Contact: FC<ContactProps> = () => {
+const Contact: FC<ContactProps> = (props) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log(data);
@@ -32,7 +34,7 @@ const Contact: FC<ContactProps> = () => {
     console.log(transporter);
   }
 
-  return <div className={css.formContainer}>
+  return <div className={css.formContainer} id={props.id}>
     <div className={css.small}>
       <Title>Contact</Title>
       <form onSubmit={handleSubmit(onSubmit)}>

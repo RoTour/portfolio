@@ -6,11 +6,13 @@ import logoPuppeteer from '../../assets/puppeteer.png'
 import logoTeaching from '../../assets/college.png'
 import Title from '../../common/Title/Title';
 
-type ProjectsProps = {}
+type ProjectsProps = {
+  id: string
+}
 
-const Projects: FC<ProjectsProps> = () => {
+const Projects: FC<ProjectsProps> = (props) => {
   return (
-  <div className={css.centerContainer}>
+  <div className={css.centerContainer} id={props.id}>
     <div className={css.small}>
       <Title>My recent projects</Title>
       <div className={css.projectListContainer}>
