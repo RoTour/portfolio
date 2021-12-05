@@ -1,20 +1,45 @@
-.projectListContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 10vw;
-	height: 100%;
+/* Base break point. Must contain every classes */
+@media only screen and (max-width: 9999999px) {
+	.projectListContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10vw;
+		height: 100%;
+	}
+
+	.centerContainer {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
+
+	.small {
+		height: 80vh;
+		width: 90%;
+		margin: auto;
+	}
 }
 
-.centerContainer {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
+/* Tablets breakpoint */
+@media only screen and (max-width: 900px) {
+	.projectListContainer {
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+	}
+
+	.centerContainer {
+		height: unset;
+	}
+
+	.small {
+		height: unset;
+	}
 }
 
-.small {
-	height: 80vh;
-	width: 90%;
-	margin: auto;
+/* Phones breakpoint */
+@media only screen and (max-width: 600px) {
+
 }
+

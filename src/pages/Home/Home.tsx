@@ -36,7 +36,6 @@ const Home: FC<HomeProps> = (props) => {
         <h1 className={css.title}>ROBIN TOURNE</h1>
         <h2 className={css.subTitle}>STUDENT <strong>&&</strong><br/> FREELANCE WEB DEVELOPER</h2>
       </div>
-      <div className={css.divider}/>
       <div/>
     </div>
     <div className={css.arrowContainer} onClick={nextRef.current}>

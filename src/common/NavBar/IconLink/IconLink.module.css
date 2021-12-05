@@ -1,24 +1,40 @@
-a {
-	width: 100%;
-	text-align: center;
-	position: relative;
+/* Base break point. Must contain every classes */
+@media only screen and (max-width: 9999999px) {
+	a {
+		width: 100%;
+		text-align: center;
+		position: relative;
+	}
+
+	a > .infobox {
+		z-index: 10;
+		transform: scale(0);
+		color: white;
+		position: absolute;
+		top: 10px;
+		left: 100%;
+		font-size: large;
+		background-color: black;
+		padding: 10px;
+		border-radius: 10px;
+		width: max-content;
+		transition: 300ms ease-out;
+	}
+
+	a:hover > .infobox {
+		transform: scale(1);
+	}
+
 }
 
-a > .infobox {
-	z-index: 10;
-	transform: scale(0);
-	color: white;
-	position: absolute;
-	top: 10px;
-	left: 100%;
-	font-size: large;
-	background-color: black;
-	padding: 10px;
-	border-radius: 10px;
-	width: max-content;
-	transition: 300ms ease-out;
+/* Tablets breakpoint */
+@media only screen and (max-width: 900px) {
+	a > .infobox {
+		display: none;
+	}
 }
 
-a:hover > .infobox {
-	transform: scale(1);
+/* Phones breakpoint */
+@media only screen and (max-width: 600px) {
+
 }

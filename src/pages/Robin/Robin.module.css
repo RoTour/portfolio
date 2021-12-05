@@ -1,43 +1,75 @@
-.centerContainer {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
+/* Base break point. Must contain every classes */
+@media only screen and (max-width: 9999999px) {
+	.centerContainer {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
+
+	.twoColSeparatedContainer {
+		height: 80%;
+		display: grid;
+		grid-template-columns: 1fr 3px 1fr;
+		align-items: center;
+	}
+
+	.leftCol {
+		height: 80%;
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid-template-rows: max-content 1fr;
+	}
+
+	.leftCol p {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.leftCol strong {
+		color: var(--primary-color);
+	}
+
+	.divider {
+		background-color: white;
+		height: 80%;
+	}
+
+	.rightCol {
+		height: 80%;
+		width: 80%;
+		margin: auto;
+	}
 }
 
-.twoColSeparatedContainer {
-	height: 80%;
-	display: grid;
-	grid-template-columns: 1fr 3px 1fr;
-	align-items: center;
+/* Tablets breakpoint */
+@media only screen and (max-width: 900px) {
+	.twoColSeparatedContainer {
+		grid-template-columns: unset;
+		grid-template-rows: 1fr;
+		margin-bottom: 10rem;
+	}
+
+	.leftCol {
+		height: unset;
+		margin-bottom: 10rem;
+	}
+
+	.rightCol {
+		height: unset;
+	}
+	.centerContainer {
+		height: unset;
+	}
+
+	.divider {
+		display: none;
+	}
 }
 
-.leftCol {
-	height: 80%;
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-rows: max-content 1fr;
-}
+/* Phones breakpoint */
+@media only screen and (max-width: 600px) {
 
-.leftCol p {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
-
-.leftCol strong {
-	color: var(--primary-color);
-}
-
-.divider {
-	background-color: white;
-	height: 80%;
-}
-
-.rightCol {
-	height: 80%;
-	width: 80%;
-	margin: auto;
-}
-

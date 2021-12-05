@@ -67,6 +67,10 @@
 	:root {
 		--sidebar-width: 7.5%;
 	}
+	#content {
+		padding-left: 0;
+		padding-bottom: var(--sidebar-width);
+	}
 }
 
 /* Phones breakpoint */
@@ -76,13 +80,10 @@
 		width: 100%;
 		top: unset;
 		bottom: 0;
+		z-index: 10;
 	}
 	.siteContainer {
 		display: flex;
 		flex-direction: column;
-	}
-	#content {
-		padding-left: 1rem;
-		padding-bottom: var(--sidebar-width);
 	}
 }
