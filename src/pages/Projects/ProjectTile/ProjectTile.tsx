@@ -9,10 +9,12 @@ type ProjectTileProps = {
 }
 
 const ProjectTile: FC<ProjectTileProps> = (props) => {
-  return <div className={css.projectContainer}>
-    <img className={css.img} src={props.image} alt={'Project'}/>
-    <p className={css.projectTileText}>{props.children}</p>
-  </div>;
+  return <a href={'https://github.com/rotour'} target={'_blank'} rel={'noreferrer'}>
+    <div className={css.projectContainer}>
+      <img className={css.img} src={props.image} alt={'Project'}/>
+      <p className={css.projectTileText}>{props.children}</p>
+    </div>
+  </a>;
 };
 
 export default ProjectTile;
