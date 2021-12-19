@@ -2,6 +2,10 @@
 	--card-border-radius: 20px;
 }
 
+.unstyled-link, p {
+	text-decoration: underline var(--background-color-dark);
+}
+
 .projectContainer {
 	display: grid;
 	grid-template-rows: max-content 1fr;
