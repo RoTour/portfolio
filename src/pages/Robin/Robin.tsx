@@ -17,7 +17,7 @@ const Robin: FC<RobinProps> = (props) => {
           <p> - I'm a French 20 years old student learning <strong>Web Development</strong></p>
           <p> - I'm passionated about all kind of <strong>new technologies</strong></p>
           <p> - I work as a part-time <strong>Freelance Web Developer </strong>
-            to gain experience in the domain <strong><br/>I love</strong>
+            to gain experience in this <strong><br/>constantly expanding field</strong>
           </p>
         </div>
       </div>

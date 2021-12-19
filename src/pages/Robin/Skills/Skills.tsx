@@ -45,7 +45,7 @@ const Skills: FC<SkillsProps> = () => {
     <p className={css.mobile}>SQL</p>
     <a target={'_blank'} rel={'noreferrer'} href={'https://en.wikipedia.org/wiki/SQL'} className={css.skill}>
       <FaDatabase />
-      <div className={css.infobox}>{'SQL (mysql, postgre, sqlite'}</div>
+      <div className={css.infobox}>{'SQL (mysql, postgre, sqlite)'}</div>
     </a>
     <div className={css.desktop}/>
     <a target={'_blank'} rel={'noreferrer'} href={'https://github.com/rotour'} className={css.skill}>

@@ -16,6 +16,11 @@
 		transition: 300ms ease-out;
 	}
 
+	.skill:nth-child(1) {
+		position: relative;
+		z-index: 1;
+	}
+
 	.skill > svg {
 		padding: 15%;
 		width: 100%;
@@ -25,6 +30,7 @@
 
 	.skill > .infobox {
 		transform: scale(0) translateX(-100%);
+		z-index: 2;
 		color: white;
 		position: absolute;
 		top: 90%;
