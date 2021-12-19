@@ -61,6 +61,21 @@
 		align-items: center;
 	}
 
+	.submitBtn:disabled,
+	.submitBtn[disabled]{
+		border: 1px solid #999999;
+		background-color: #cccccc;
+		color: #666666;
+	}
+
+	.submitBtn:disabled:hover,
+	.submitBtn[disabled]:hover{
+		cursor: not-allowed;
+		border: 1px solid #999999;
+		background-color: #cccccc;
+		color: #666666;
+	}
+
 	.submitBtn > * {
 		margin-left: 1rem;
 	}
@@ -78,6 +93,10 @@
 
 	.error {
 		color: var(--error-color);
+	}
+
+	textarea {
+		resize: vertical;
 	}
 
 }

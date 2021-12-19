@@ -16,11 +16,11 @@ type Inputs = {
 }
 
 const Contact: FC<ContactProps> = (props) => {
-  const { register, handleSubmit, formState: { errors }, setValue } = useForm();
+  const { register, handleSubmit, formState: { errors }, setValue, getValues } = useForm();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     axios({
       method: 'POST',
-      url: '',
+      url: 'https://api.rotour.codes/misc/send-mail',
       data: {
         'from': data.email,
         'html': `<p>${data.message}</p>`,
@@ -52,12 +52,14 @@ const Contact: FC<ContactProps> = (props) => {
           </label>
         </div>
         <label className={[css.formLabel, `${errors.message ? css.error : ''}`].join(' ')}>
-          📜 Message {errors.message && ' - This field is required '}
+          📜 Message {errors.message && ' - This field is required (min. 5 characters)'}
           <textarea defaultValue={''} className={css.formInput} rows={4}
                     placeholder={'Your message ...'}
                     {...register('message', { required: true, minLength: 5, maxLength: 5000 })}/>
         </label>
-        <button type={'submit'} className={css.submitBtn}>Send <MdSend size={'1.1em'}/></button>
+        <button type={'submit'}
+                disabled={(errors.message || errors.email) || (getValues('email') === '' || getValues('message') === '')}
+                className={css.submitBtn}>Send <MdSend size={'1.1em'}/></button>
       </form>
     </div>
   </div>;
