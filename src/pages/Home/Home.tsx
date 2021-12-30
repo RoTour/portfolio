@@ -14,11 +14,14 @@ const Home: FC<HomeProps> = (props) => {
   const canvas = <canvas id={'bg'} className={css.bg}/>;
 
   useEffect(() => {
-    if (firstTime.current) {
+    if (firstTime.current && window.innerWidth > 600) {
       if (navigator.location.hash === '') {
         navigator.push('#home');
+        console.log("keep pushing");
       }
       firstTime.current = false
+    } else {
+      console.log("stop pushing");
     }
     nextRef.current = () => {
       document.querySelector('#robin')

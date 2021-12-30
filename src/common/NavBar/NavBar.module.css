@@ -60,5 +60,6 @@
 	span {
 		flex-direction: row;
 		height: 100%;
+		transform: translateY(1px);
 	}
 }
