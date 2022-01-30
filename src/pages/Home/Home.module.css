@@ -113,6 +113,11 @@
 
 /* Phones breakpoint */
 @media only screen and (max-width: 600px) {
-
+	.preTitle, .subTitle {
+		font-size: large;
+	}
+	.title {
+		font-size: x-large;
+	}
 }
 

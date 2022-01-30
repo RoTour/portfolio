@@ -42,7 +42,7 @@ const Home: FC<HomeProps> = (props) => {
       <div/>
     </div>
     <div className={css.arrowContainer} onClick={nextRef.current}>
-      <IoIosArrowDown size={150} className={css.arrow}/>
+      <IoIosArrowDown size={window.innerWidth > 600 ? 150 : 100} className={css.arrow}/>
     </div>
   </div>;
 };

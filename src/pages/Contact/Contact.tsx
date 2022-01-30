@@ -16,7 +16,7 @@ type Inputs = {
 }
 
 const Contact: FC<ContactProps> = (props) => {
-  const { register, handleSubmit, formState: { errors }, setValue, getValues } = useForm();
+  const { register, handleSubmit, formState: { errors }, setValue } = useForm();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     axios({
       method: 'POST',
@@ -58,7 +58,6 @@ const Contact: FC<ContactProps> = (props) => {
                     {...register('message', { required: true, minLength: 5, maxLength: 5000 })}/>
         </label>
         <button type={'submit'}
-                disabled={(errors.message || errors.email) || (getValues('email') === '' || getValues('message') === '')}
                 className={css.submitBtn}>Send <MdSend size={'1.1em'}/></button>
       </form>
     </div>

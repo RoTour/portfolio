@@ -26,6 +26,7 @@
 	.leftCol p {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
+		text-decoration: none;
 	}
 
 	.leftCol strong {
@@ -71,5 +72,13 @@
 
 /* Phones breakpoint */
 @media only screen and (max-width: 600px) {
-
+	.twoColSeparatedContainer {
+		grid-template-columns: 100vw;
+	}
+	.title {
+		font-size: large;
+	}
+	.leftCol p {
+		font-size: smaller;
+	}
 }
